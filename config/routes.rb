@@ -5,10 +5,9 @@ Rails.application.routes.draw do
     namespace :v1 do
       
       resources :reviews, only: [:index]
-      resources :movies, only: [:index]
-      
-      get 'tmdb_api', to: 'tmdb_api#index'
-      get 'tmdb_api/search/:query', to: 'tmdb_api#search'
+
+      get 'movies', to: 'movies#index'
+      get 'movies/search/:query', to: 'movies#search'
       
     end
   end

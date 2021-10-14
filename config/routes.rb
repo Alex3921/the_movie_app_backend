@@ -7,6 +7,7 @@ Rails.application.routes.draw do
       resources :reviews, only: [:index]
 
       get 'movies', to: 'movies#index'
+      post 'movies', to: 'movies#create'
       get 'movies/search/:query', to: 'movies#search'
       
     end

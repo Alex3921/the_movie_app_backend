@@ -4,12 +4,11 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       
-      resources :reviews, only: [:index]
+      resources :reviews, only: [:create, :destroy]
 
       get 'movies', to: 'movies#index'
-      post 'movies', to: 'movies#create'
       get 'movies/search/:query', to: 'movies#search'
-      
+      get 'movies/:id', to: 'movies#show'
     end
   end
 end

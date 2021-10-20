@@ -1,15 +1,15 @@
 class Api::V1::MoviesController < ApplicationController
   def index
-    movies = Movie.call
+    movies = Movie.all[0...24]
     render json: movies
   end
 
   def create
-    byebug
+    movie = Movie.create(movie_params)
     if movie.save
       render json: movie, status: :created
     else
-      render json: {error: "Could not save this movie"}
+      render json: { error: "Could not save this movie" }
     end
   end
 
@@ -19,6 +19,11 @@ class Api::V1::MoviesController < ApplicationController
     render json: response
   end
 
+  def show
+    movie = Movie.find_by_id(params[:id])
+    render json: movie
+  end
+
   private
   def movie_params
     params.require(:movie).permit(
@@ -26,14 +31,8 @@ class Api::V1::MoviesController < ApplicationController
       :overview, 
       :poster_path, 
       :vote_average, 
-      :external_id, 
-      reviews_attributes: 
-        [
-          :author_name, 
-          :content, 
-          :stars, 
-          :movie_id
-        ]
+      :external_id 
       )
   end
+
 end

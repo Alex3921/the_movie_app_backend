@@ -1,0 +1,12 @@
+id,author_name,content,stars,movie_id
+1,Alex,This was a great movie!,5,1
+2,Donald,"This is one of the greatest movies of all time. It's great, trust me! I have a big brain btw!",5,1
+5,Asap,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel vestibulum lorem. Aliquam finibus nec dui eu facilisis. In quis dapibus libero, sed sagittis enim.",2,1
+6,Mon Cher,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel vestibulum lorem. Aliquam finibus nec dui eu facilisis. In quis dapibus libero, sed sagittis enim.",5,5
+7,Trix,"""Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""",5,2
+8,Ana,"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",4,2
+11,John,Great!,5,9
+12,Cicero,"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. ",5,9
+13,Alex,At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.,5,177
+15,Otsu,"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",5,1
+20,awrqweq,AGSDfssafd,3,3

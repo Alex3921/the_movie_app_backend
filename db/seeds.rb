@@ -1,7 +1,27 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+require 'csv'
+
+movies = CSV.parse(File.read(Rails.root.join('lib', 'seeds', 'movies.csv')), headers: true, encoding: 'ISO-8859-1')
+
+movies.each do |m|
+    movie = Movie.new
+    movie.title = m['title']
+    movie.overview = m['overview']
+    movie.vote_average = m['vote_average']
+    movie.poster_path = m['poster_path']
+    movie.external_id = m['external_id']
+
+    movie.save
+end
+
+
+reviews = CSV.parse(File.read(Rails.root.join('lib', 'seeds', 'reviews.csv')), headers:true, encoding: 'ISO-8859-1')
+
+reviews.each do |r|
+    review = Review.new
+    review.author_name = r['author_name']
+    review.content = r['content']
+    review.stars = r['stars']
+    review.movie_id = r['movie_id']
+
+    review.save
+end

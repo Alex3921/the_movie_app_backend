@@ -5,7 +5,7 @@ ruby '2.6.1'
 
 gem 'rails', '~> 6.1.4', '>= 6.1.4.1'
 gem 'pg', '~> 1.2', '>= 1.2.3'
-gem 'puma', '~> 5.0'
+gem 'puma', '~> 5.6'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 gem 'active_model_serializers', '~> 0.10.2'

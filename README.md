@@ -20,10 +20,10 @@
 3. Inside the console run 'bundle install' to install the necessary [Ruby Gems](https://rubygems.org/) and dependencies:
 
     >*$ bundle install*
-        
-4. Run the database migrations:
 
-    >*$ rake db:migrate
+4. Now, we will create and seed the database:
+
+    >*$ rake db:setup
 
 5. Start the local rails server:
 

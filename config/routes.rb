@@ -11,5 +11,7 @@ Rails.application.routes.draw do
       get 'movies/:id', to: 'movies#show'
     end
   end
+  
+  get "*path", to: "fallback#index", constraints: ->(req) { !req.xhr? && req.format.html? }
 end
   

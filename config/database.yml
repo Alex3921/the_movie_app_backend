@@ -27,4 +27,5 @@ production:
   database: the_movie_app_backend_production
   username: the_movie_app_backend
   password: <%= ENV['THE_MOVIE_APP_BACKEND_DATABASE_PASSWORD'] %>
+  adapter: 'postgresql'
   # host:
